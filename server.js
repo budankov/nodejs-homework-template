@@ -13,4 +13,7 @@ mongoose
       console.log("Server running. Use our API on port: 3000");
     });
   })
-  .catch((error) => console.log(error.massage));
+  .catch((error) => {
+    console.log(error.massage);
+    process.exit(1);
+  });
